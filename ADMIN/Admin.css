@@ -1,0 +1,388 @@
+@media (min-width: 1200px) {
+    * {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .container{
+        max-width: 100%;
+        max-height: 900px!important;
+        overflow-y: scroll!important;
+    }
+
+    .row.toolbar {
+        max-width: 100%;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 2;
+        justify-content: flex-start;
+    }
+
+    .row.toolbar .logo3 {
+        width: 40%;
+    }
+
+    .row.toolbar img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .toolbar-item {
+        margin-left: 20% !important;
+        width: 40%;
+        height: inherit;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .toolbar-item-1 {
+        width: 25% !important;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toolbar-item-1 button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+        background: none;
+        border: none;outline: none;transition: 0.5s;
+    }
+    .toolbar-item-1:hover button{
+        transform: scale(1.2);transition: 0.5s;
+    }
+
+    .toolbar-item-1 button svg {
+        font-size: 200%;
+    }
+
+    .toolbar-item-1 button p {
+        font-family: "Comic Sans MS";
+    }
+
+    .row.spaceBlack {
+        height: 1rem;width: 100%;
+        background: #303231;
+    }
+
+    .row.content-one {
+        width: inherit;
+        height: 1000px;
+        background-color:#0c5460;
+    }
+
+    .left-menu-content {
+        height: inherit;
+        background: antiquewhite;
+        border-right: 2px solid white;
+    }
+
+    .left-menu-content-item {
+        width: 100%;
+        height: 50px;
+
+    }
+    .accordion-item {
+        width:100%;
+        height: 50px;
+        background-image: linear-gradient(to bottom, #0199dd, #017ebc);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-bottom: 2px solid grey;
+    }
+
+
+    .accordion-item span {
+        font-family: "Comic Sans MS";
+        font-size: 100%;
+        color: white;
+    }
+
+    .accordion-item .icon-arrow {
+        font-size: 100%;
+        margin: 0 0.7rem !important;
+        color: #cec5c5 !important;
+    }
+
+    .accordion-body {
+        width: 100%;height:auto;display:none;
+        background: #d5dfe8;
+    }
+    .contentBox{
+     transition:0.5s ease-out!important;
+    }
+    .contentBox.active .accordion-body{
+        display:block;
+    }
+    .accordion-body ul li {
+        width: 100%;
+        height: 2rem;
+        border-bottom: 1px solid white;
+    }
+
+    .accordion-body ul li:hover {
+        border-bottom: 1px solid gray;
+        transition: 0.4s;
+    }
+
+    .accordion-body ul li button {
+        font-family: "Comic Sans MS";
+        color: black;
+        text-decoration: none;
+        font-size: 85%;
+        margin-left: 3rem !important;
+        transition: 0.2s;
+        background: none;outline: none;
+    }
+
+    .accordion-body ul li button:hover {
+        color: #0190d4;
+        transition: 0.2s;
+        text-decoration: underline;
+    }
+    .right-content{
+        border-left:2px solid gray;
+        width: 100%;height: inherit;
+    }
+    .right-content .toolbar-content{
+        height:2.5rem;background-image: linear-gradient(to bottom, white 75%, #ebe9ea 100% );
+    }
+    .right-content .toolbar-content .tabTool{
+        background-image:url(./img-data/toolbar-icon.PNG);
+        background-position:right;
+        display: flex;align-items: center;
+
+    }
+    .tabTool span.title-tabTool{
+        font-family: "Comic Sans MS";
+        margin-left:1rem!important;color:white;
+    }
+    .row.tab_content_AdSet{
+        width:100%;height:800px !important;
+        background-color:white;display: none;
+    }
+    /*.content-SIP-Setting{*/
+    /*    background: white;display: none;*/
+    /*}*/
+    /*.content-IAX-Settings{*/
+    /*    background:white;display: none;*/
+    /*}*/
+    /*.content-Blacklist{*/
+    /*    background: white;display: none;*/
+    /*}*/
+    /*.content-callBack-Settings{*/
+    /*    background: white;display: none;*/
+    /*}*/
+    /*.content-DateAndTime{*/
+    /*    background: white;display: none;*/
+    /*}*/
+    .form-content{
+        width: 80%;height: 80%;
+        margin-left: 10% !important;border:1px solid black;
+    }
+    .tab-item{
+        width:auto;height:auto;
+    }
+    .tab-item button{
+        padding:0.5rem 1rem!important;background-color: #d9d4d4;border:none;
+        font-family: "Comic Sans MS";color:#0184c3;border-radius:5px;
+        outline:none;
+    }
+    .tab-item button.tablinks.active{
+        background-color: white!important;
+    }
+
+/*form SIP_SETTINGS */
+form.Form_SIP_Settings{
+    width: 100%;height: inherit;
+    margin-top:50px!important;
+}
+.lineInput{
+  width: 100%; float: right;height: 25px;
+}
+.nameInput{
+   height: 80%;
+    /*background: red;*/
+}
+.nameInput1{
+    width: auto;
+    float: right!important;
+}
+    .nameInput i {
+        font-size: 80%;color:#0184c3;
+}
+    .nameInput span{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 80%;
+    }
+.contentInput{
+   height: 80%;width: 25%;outline: none;
+    margin-left: 10px!important;
+    font-size:80%;
+}
+.contentInput option{
+    text-align: center;
+}
+.nameInput1 span.checkbox-enable{
+   padding-right: 50px!important;
+}
+
+/*KET THUC CSS FORM SIP SETTINGS*/
+
+    /*DATE AND TIME*/
+
+    .DateAndTime-content{
+      width: 80%;height: auto;margin-left: 10% !important;
+    }
+    .form-DateAndTime{
+        margin-top:2rem!important;
+        width: 100%;height: auto;border: 2px solid #678de0;
+    }
+    .form-DateAndTime div.title-date{
+        width: 100% !important;height: 2rem;background-image: linear-gradient(to bottom, rgb(122, 189, 224),rgb(36,146,211));
+        font-family: "Comic Sans MS";display: flex;align-items:center;color:white;font-size: 90%;
+    }
+    .form-DateAndTime div.title-date span{
+        margin-left: 1rem!important;
+    }
+    .row.dateAndTime{
+        width: 100%;height: 2rem;
+        display: flex;align-items: center;font-family: Tahoma;
+    }
+    .row.dateAndTime #timeGMT{
+        font-family: Tahoma;font-size: 80%;font-weight: bold;
+    }
+    .row.dateAndTime .col-4 span{
+        float: right;font-weight: bold;font-size: 80%;
+    }
+    .row.dateAndTime .col-8 span{
+        float: left;padding-left: 10px!important;font-size: 100%;
+    }
+    .row.dateAndTime .col-8 select{
+        width: 100% !important;outline: none;font-family:Tahoma;
+        font-size: 80%;
+        overflow: hidden!important;
+    }
+    .row.dateAndTime .col-8 span.title{
+        font-weight: bold;font-size: 80%;
+    }
+    .row.dateAndTime .col-8{
+        display: flex;align-items: center;
+    }
+    .row.dateAndTime .col-8 span.titleDate{
+        margin-right: 1rem!important;font-family: Tahoma;font-size: 80%;font-weight: bold;
+    }
+    .row.dateAndTime .col-8 span.titleDate input{
+        width: 80%;outline: none;
+    }
+    .row.dateAndTime .col-8 input.inputDate{
+        width: 140px !important;outline: none;
+       height: 1.3rem;font-size: 80%;
+    }
+    select#hour, select#minute, select#AM_PM{
+        width: 3rem!important;height: 1.3rem;
+    }
+    .DateAndTime-content .saveAndCancelBtn{
+        width:100%;height: 60px;display: flex;justify-content: center;align-items: center;
+    }
+    .saveBtn, .cancelBtn, .btnStart-child{
+        width: 80px;height: 25px;border:1px solid grey;cursor: pointer;
+        display: flex;align-items: center;margin:0 1rem !important;
+    }
+
+    .saveBtn .child1, .cancelBtn .child1, .btnStart-child .child1{
+        width:30%;height:100%;background-image:linear-gradient(to bottom, white,rgb(186,187,187));
+        display: flex;justify-content: center;align-items: center;transition: 0.2s;
+    }
+    .saveBtn .child2, .cancelBtn .child2,.btnStart-child .child2 {
+        background-image: linear-gradient(to bottom,white, rgb(231,231,230));
+        width: 70%;height: 100%;font-family: Tahoma;font-size: 80%;font-weight: 550;
+        display: flex;justify-content: center;align-items: center;transition: 0.2s;
+    }
+    .saveBtn img, .cancelBtn img, .btnStart-child img{
+        width: 50%;height: 50%;
+    }
+    .saveBtn:hover .child2, .cancelBtn:hover .child2{
+        background-image:linear-gradient(to bottom,white, rgb(180, 212, 227));transition: 0.2s;
+    }
+    .saveBtn:hover .child1, .cancelBtn:hover .child1{
+        transition: 0.2s;
+        background-image:linear-gradient(to bottom,white, rgb(122, 189, 224));
+    }
+
+    .form.Firmware_Download_Source{
+        margin-top:2rem!important;display: flex;justify-content: center;align-items: center;
+        width: 50%;height: 200px;margin-left: 40%!important;
+        border:1px solid gray;position: relative;
+    }
+    .form.Firmware_Download_Source .titleFirmware{
+           position: absolute;top:-1rem;padding:0 0.5rem!important;height: 2rem;
+            background-color: white;width: auto;font-family: Tahoma;font-weight: bold;font-size: 90%;
+    }
+    /*.form.Firmware_Download_Source .titleFirmware span{*/
+    /*        display: flex;justify-content: center;align-items: center;*/
+    /*         background-color: red;width: 100%;*/
+    /*}*/
+    .form.Firmware_Download_Source .radioBtnFirmware{
+        position: absolute;top:1.5rem;
+        width: 100%;height: 3rem;
+        display: flex;justify-content: center;align-items: center;
+    }
+    .form.Firmware_Download_Source .radioBtnFirmware1, .radioBtnFirmware2{
+        width: 6.5rem;
+    }
+    .radioBtnFirmware1 span,.radioBtnFirmware2 span{
+            padding-left:0.5rem!important;
+    }
+      .form.Firmware_Download_Source .importURL{
+          position: absolute;top:4.5rem;height: 1.5rem;
+          width: 100%;height: 2rem;
+          display: flex;justify-content: center;align-items: center;
+      }
+    .form.Firmware_Download_Source .importURL span{
+        width: 3rem;height: inherit;font-family: Tahoma;font-weight:200;
+        display: flex;justify-content: center;align-items: center;
+    }
+    .form.Firmware_Download_Source .importURL input{
+        width: 14rem;height:80%;outline:none;border:1.5px solid #4997c6;
+        border-radius: 3px;
+
+    }
+    .form.Firmware_Download_Source .resetFirmware{
+        width: 100%;height: auto;display: flex;justify-content: center;align-items: center;
+        position: absolute;top:7rem;
+    }
+    .resetFirmware span{
+        font-family: Tahoma;font-weight: 500;font-size: 90%;
+        padding-right:5px !important;padding-left: 0.5rem!important;
+    }
+    .form.Firmware_Download_Source .btnStart{
+        position: absolute;top:9.5rem;
+    }
+    .btnStart-child:hover .child1{
+        background-image: linear-gradient(#73de4f, #57c23c);
+    }
+.btnStart-child:hover .child2{
+    background-image: linear-gradient(#67d045, #2f871a);
+    color: #f3f0f0;
+}
+.form.Firmware_Download_Source #newWindow{
+    position: absolute;z-index:1;top:10rem;left: 5rem;
+    width: 200px;height: 200px;display: none;
+    background-color: darkgreen;
+}
+
+
+
+
+
+
+
+}

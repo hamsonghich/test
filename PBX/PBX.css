@@ -1,0 +1,236 @@
+@media (min-width: 1200px) {
+    * {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .container{
+        max-width: 100%;
+        max-height: 900px!important;
+        overflow-y: scroll!important;
+    }
+
+    .row.toolbar {
+        max-width: 100%;
+        height: 5.5rem;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-grow: 2;
+        justify-content: flex-start;
+    }
+
+    .row.toolbar .logo3 {
+        width: 40%;
+    }
+
+    .row.toolbar img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .toolbar-item {
+        margin-left: 20% !important;
+        width: 40%;
+        height: inherit;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .toolbar-item-1 {
+        width: 25% !important;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toolbar-item-1 button {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+        height: 80%;
+        background: none;
+        border: none;outline: none;transition: 0.5s;
+    }
+    .toolbar-item-1:hover button{
+        transform: scale(1.2);transition: 0.5s;
+    }
+
+    .toolbar-item-1 button svg {
+        font-size: 200%;
+    }
+
+    .toolbar-item-1 button p {
+        font-family: Tahoma;
+    }
+
+    .row.spaceBlack {
+        height: 1rem;width: 100%;
+        background: #303231;
+    }
+
+    .row.content-one {
+        width: inherit;
+        height: 1000px;
+        background-color:#0c5460;
+    }
+
+    .left-menu-content {
+        height: inherit;
+        background: antiquewhite;
+        border-right: 2px solid white;
+    }
+
+    .left-menu-content-item {
+        width: 100%;
+        height: 50px;
+
+    }
+    .accordion-item {
+        width:100%;
+        height: 50px;
+        background-image: linear-gradient(to bottom, #0199dd, #017ebc);
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        border-bottom: 2px solid grey;
+    }
+
+
+    .accordion-item span {
+        font-family: Tahoma;
+        font-size: 100%;
+        color: white;
+    }
+
+    .accordion-item .icon-arrow {
+        font-size: 100%;
+        margin: 0 0.7rem !important;
+        color: #cec5c5 !important;
+    }
+
+    .accordion-body {
+        width: 100%;height:auto;display:none;
+        background: #d5dfe8;
+    }
+    .contentBox{
+     transition:0.5s ease-out!important;
+    }
+    .contentBox.active .accordion-body{
+        display:block;
+    }
+    .accordion-body ul li {
+        width: 100%;
+        height: 2rem;
+        border-bottom: 1px solid white;
+    }
+
+    .accordion-body ul li:hover {
+        border-bottom: 1px solid gray;
+        transition: 0.4s;
+    }
+
+    .accordion-body ul li button {
+        font-family: Tahoma;
+        color: black;
+        text-decoration: none;
+        font-size: 85%;
+        margin-left: 3rem !important;
+        transition: 0.2s;
+        background: none;outline: none;border:none;
+    }
+
+    .accordion-body ul li button:hover {
+        color: #0190d4;
+        transition: 0.2s;
+        text-decoration: underline;
+    }
+    .right-content{
+        border-left:2px solid gray;
+        width: 100%;height: inherit;
+    }
+    .right-content .toolbar-content{
+        height:2.5rem;background-image: linear-gradient(to bottom, white 75%, #ebe9ea 100% );
+    }
+    .right-content .toolbar-content .tabTool{
+        background-image:url(./img-data/toolbar-icon.PNG);
+        background-position:right;
+        display: flex;align-items: center;
+
+    }
+    .tabTool span.title-tabTool{
+        font-family: Tahoma;
+        margin-left:1rem!important;color:white;
+    }
+
+    .row.tab_content_FXS_VoIP{
+        width:100%;height:800px !important;
+        background-color:white;display: none;
+    }
+    .form-content{
+        width: 100%;height:100%;margin-top:1rem!important;
+        border:1px solid black;position: relative;
+    }
+    .form-content .title-content{
+        width: 100%;
+        position: absolute;
+        font-weight: bold;top:0.5rem;
+    }
+    .form-content span i{
+        padding-left: 1rem!important;
+        padding-right: 0.5rem!important;
+        color: #3968de;
+    }
+    #FXS_VoIP_Extensions{
+       display: none;
+    }
+    #table-FXS_VoIP_Extensions{
+        width: 96%;margin-left: 2% !important;position: relative;top:2.5rem;
+        text-align: center;margin-bottom: 1rem!important;
+        height: auto;border:1px solid grey;
+    }
+    #table-FXS_VoIP_Extensions tr th{
+        height: 1.8rem;width: 20%;color:white;
+        background-image: linear-gradient(to bottom, #7eaee3, #3a9dd9);
+    }
+    #table-FXS_VoIP_Extensions tr th:nth-child(1){
+        width: 10%;
+    }
+    #table-FXS_VoIP_Extensions tr td{
+        height: 1.5rem;font-size: 85%;
+        color:black;
+    }
+    #table-FXS_VoIP_Extensions tr td:nth-child(5){
+        display: flex;align-items: center;justify-content: center;
+    }
+    #table-FXS_VoIP_Extensions tr td button{
+        width: 1.2rem;height: 1.2rem;display: flex;justify-content: center;align-items: center;
+       background-image: linear-gradient(to bottom,white, #b9b1b1);
+        border-radius:5px;border: 1px solid #8d8484;margin:0 0.5rem!important;
+    }
+    #table-FXS_VoIP_Extensions tr td button i{
+        font-size: 80%;
+    }
+    #table-FXS_VoIP_Extensions tr td button:nth-child(1):hover{
+    border:1px solid orange;
+    }
+    #table-FXS_VoIP_Extensions tr td button:nth-child(1):hover i{
+        color: orange;
+    }
+    #table-FXS_VoIP_Extensions tr td button:nth-child(2):hover{
+        border:1px solid darkred;
+    }
+    #table-FXS_VoIP_Extensions tr td button:nth-child(2):hover i{
+        color: firebrick;
+    }
+    #table-FXS_VoIP_Extensions tr:nth-child(even){
+        background-color: #f1e8e8;
+    }
+    .VoIP_Extensions_Btn{
+        cursor: pointer;position: absolute;top:43rem;
+    }
+
+
+}

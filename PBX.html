@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script type="module" src="ionicons.designerpack/index.js"></script>
+    <script nomodule src="ionicons.designerpack/index.mjs"></script>
+    <script nomodule src="ionicons.designerpack/index.d.ts"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+
+
+    <script src="less.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="PBX/PBX.css">
+    <script src="PBX/PBX.js"></script>
+
+    <title>PBX</title>
+</head>
+<body>
+<div class="container">
+    <div class="row toolbar">
+        <div class="logo3"><img src="img-data/mypbx_logo3.png"></div>
+        <div class="toolbar-item">
+            <div class="toolbar-item-1">
+                <button><span class="iconify" data-icon="icomoon-free:stats-dots" data-inline="false"></span>
+                    <p>Status</p></button>
+            </div>
+            <div class="toolbar-item-1">
+                <button><span class="iconify" data-icon="grommet-icons:system" data-inline="false"></span>
+                    <p>System</p></button>
+            </div>
+            <div class="toolbar-item-1">
+                <button><span class="iconify" data-icon="carbon:phone-settings" data-inline="false"></span>
+                    <p>PBX</p></button>
+            </div>
+            <div class="toolbar-item-1">
+                <button><span class="iconify" data-icon="carbon:report" data-inline="false"></span>
+                    <p>Reports</p></button>
+            </div>
+            <div class="toolbar-item-1">
+                <button><span class="iconify" data-icon="whh:domainaddon" data-inline="false"></span>
+                    <p>Addon</p></button>
+            </div>
+            <div class="toolbar-item-1">
+                <button onclick="window.location.href='/test.html'"><span class="iconify" data-icon="gg:close-o"
+                                                                          data-inline="false"></span>
+                    <p>Logout</p></button>
+            </div>
+
+        </div>
+    </div>
+    <div class="row spaceBlack"></div>
+    <div class="row content-one" id="content-one">
+
+        <div class="col-2 left-menu-content">
+            <div class="contentBox">
+                <div class="accordion-item" onclick="">
+                    <i class="icon-arrow fas fa-caret-square-right"></i>
+                    <span>FXS/VoIP </span>
+                </div>
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <button class="tab_links_FXS_VoIP" onclick="PBX_child1(event, 'FXS_VoIP_Extensions')">
+                                FXS/VoIP Extensions
+                            </button>
+                        </li>
+                        <li>
+                            <button class="tab_links_FXS_VoIP" onclick="">Item-nth(2)</button>
+                        </li>
+                        <li>
+                            <button class="tab_links_FXS_VoIP" onclick="">Item-nth(3)</button>
+                        </li>
+                        <li>
+                            <button class="tab_links_FXS_VoIP" onclick="">Item-nth(4)</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contentBox">
+                <div class="accordion-item" onclick="">
+                    <i class="icon-arrow fas fa-caret-square-right"></i>
+                    <span>Trunks</span>
+                </div>
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <button onclick="">Item-nth(1)</button>
+                        </li>
+                        <li>
+                            <button onclick="">Item-nth(2)</button>
+                        </li>
+                        <li>
+                            <button onclick="">Item-nth(3)</button>
+                        </li>
+                        <li>
+                            <button onclick="">Item-nth(4)</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contentBox">
+                <div class="accordion-item" onclick="">
+                    <i class="icon-arrow fas fa-caret-square-right"></i>
+                    <span>Outbound Call Control</span>
+                </div>
+                <div class="accordion-body">
+                    <ul>
+                        <li>
+                            <button onclick="">Item-nth(1)</button>
+                        </li>
+                        <li>
+                            <button onclick="">Item-nth(2)</button>
+                        </li>
+                        <li>
+                            <button onclick="">Item-nth(3)</button>
+                        </li>
+                        <li>
+                            <button onclick="">Item-nth(4)</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="col-10 right-content">   <!-- noi dung se duoc display:none or hide-->
+            <div class="row toolbar-content">
+                <div class="col-4 tabTool">
+                    <span class="title-tabTool" id="title-tabTool-PBX"></span>
+                </div>
+            </div>
+            <!--            // content big  tab-content-advancedSettings-->
+            <div class="row tab_content_FXS_VoIP" id="FXS_VoIP_Extensions">
+                <div class="form-content">
+                    <span class="title-content"><i class="fas fa-caret-right"></i>FXS Extensions</span>
+                    <table id="table-FXS_VoIP_Extensions">
+                        <tr>
+                            <th>Port</th>
+                            <th>Extensions</th>
+                            <th>Name</th>
+                            <th></th>
+                            <th>Call ID</th>
+                        </tr>
+                        <!--                        <tr>-->
+                        <!--                            <td></td>-->
+                        <!--                            <td></td>-->
+                        <!--                            <td></td>-->
+                        <!--                            <td></td>-->
+                        <!--                            <td>-->
+                        <!--                                <button class="acceptBtn" onclick=""><i class="fa fa-pencil" aria-hidden="true"></i></button>-->
+                        <!--                                <button class="cancelBtn" onclick=""><i class="fa fa-times" aria-hidden="true"></i></button>-->
+                        <!--                            </td>-->
+                        <!--                        </tr>-->
+
+                    </table>
+                    <span class="VoIP_Extensions_Btn  tab_links_FXS_VoIP" id="VoIP_Extensions_Btn"
+                          onclick="PBX_child1(event, 'VoIP_Extensions')"><i class="fas fa-caret-right"></i>VoIP Extensions</span>
+                </div>
+            </div>
+
+            <div class="row tab_content_FXS_VoIP" id="VoIP_Extensions">
+                <div class="form-content">
+                    <span  class="title-content"><i class="fas fa-caret-right"></i>VoIP_Extensions</span>
+                    <div class="row VoIP_Extensions_option">
+                        <ul>
+                         <li><button onclick="cacuHeight()"><i class="fas fa-plus"></i><span>Add Extension</span></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>
